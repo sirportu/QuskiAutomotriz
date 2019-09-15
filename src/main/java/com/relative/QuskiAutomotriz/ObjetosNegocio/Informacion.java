@@ -14,11 +14,6 @@ public class Informacion implements java.io.Serializable {
 	private java.lang.String mensaje;
 	@org.kie.api.definition.type.Label("Identificacion")
 	private java.lang.String identificacion;
-	@org.kie.api.definition.type.Label("Resultados")
-	private com.relative.QuskiAutomotriz.ObjetosNegocio.Resultados resultados;
-	@org.kie.api.definition.type.Label("Politicas")
-	private com.relative.QuskiAutomotriz.ObjetosNegocio.Politicas politicas;
-
 	public Informacion() {
 	}
 
@@ -46,35 +41,11 @@ public class Informacion implements java.io.Serializable {
 		this.identificacion = identificacion;
 	}
 
-	public com.relative.QuskiAutomotriz.ObjetosNegocio.Resultados getResultados() {
-		return this.resultados;
-	}
-
-	public void setResultados(
-			com.relative.QuskiAutomotriz.ObjetosNegocio.Resultados resultados) {
-		this.resultados = resultados;
-	}
-
-	public com.relative.QuskiAutomotriz.ObjetosNegocio.Politicas getPoliticas() {
-		return this.politicas;
-	}
-
-	public void setPoliticas(
-			com.relative.QuskiAutomotriz.ObjetosNegocio.Politicas politicas) {
-		this.politicas = politicas;
-	}
-
-	public Informacion(
-			java.lang.String codigoError,
-			java.lang.String mensaje,
-			java.lang.String identificacion,
-			com.relative.QuskiAutomotriz.ObjetosNegocio.Resultados resultados,
-			com.relative.QuskiAutomotriz.ObjetosNegocio.Politicas politicas) {
+	public Informacion(java.lang.String codigoError, java.lang.String mensaje,
+			java.lang.String identificacion) {
 		this.codigoError = codigoError;
 		this.mensaje = mensaje;
 		this.identificacion = identificacion;
-		this.resultados = resultados;
-		this.politicas = politicas;
 	}
 
 }

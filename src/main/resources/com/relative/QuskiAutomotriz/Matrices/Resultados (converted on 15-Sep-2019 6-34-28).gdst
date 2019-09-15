@@ -49,7 +49,7 @@
                           <genericType>String</genericType>
                         </next>
                         <name>cliente</name>
-                        <classType>com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente</classType>
+                        <classType>com.relative.QuskiOro.ObjetosNegocio.Cliente</classType>
                         <genericType>this</genericType>
                       </next>
                       <name>Cliente</name>
@@ -84,7 +84,7 @@
                           <genericType>String</genericType>
                         </next>
                         <name>cliente</name>
-                        <classType>com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente</classType>
+                        <classType>com.relative.QuskiOro.ObjetosNegocio.Cliente</classType>
                         <genericType>this</genericType>
                       </next>
                       <name>Cliente</name>
@@ -114,7 +114,7 @@
           <factField>getMonths()</factField>
           <fieldType>String</fieldType>
           <varName>param1</varName>
-          <factType>com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente</factType>
+          <factType>com.relative.QuskiOro.ObjetosNegocio.Cliente</factType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
           <hideColumn>false</hideColumn>
@@ -124,7 +124,7 @@
           <factField>getMonths()</factField>
           <fieldType>String</fieldType>
           <varName>param2</varName>
-          <factType>com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente</factType>
+          <factType>com.relative.QuskiOro.ObjetosNegocio.Cliente</factType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
       </childColumns>
     </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
@@ -164,7 +164,7 @@
                           <genericType>String</genericType>
                         </next>
                         <name>variablesNegocio</name>
-                        <classType>com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio</classType>
+                        <classType>com.relative.QuskiOro.ObjetosNegocio.VariablesNegocio</classType>
                         <genericType>this</genericType>
                       </next>
                       <name>VariablesNegocio</name>
@@ -206,7 +206,7 @@
                           <genericType>String</genericType>
                         </next>
                         <name>variablesNegocio</name>
-                        <classType>com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio</classType>
+                        <classType>com.relative.QuskiOro.ObjetosNegocio.VariablesNegocio</classType>
                         <genericType>this</genericType>
                       </next>
                       <name>VariablesNegocio</name>
@@ -248,7 +248,7 @@
                           <genericType>String</genericType>
                         </next>
                         <name>variablesNegocio</name>
-                        <classType>com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio</classType>
+                        <classType>com.relative.QuskiOro.ObjetosNegocio.VariablesNegocio</classType>
                         <genericType>this</genericType>
                       </next>
                       <name>VariablesNegocio</name>
@@ -330,7 +330,7 @@
       <header>Converted from [&apos;VALOR&apos;]</header>
       <definition>
         <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>resultado.setValor(&quot;@{param7}&quot;);
+          <text>resultado.setValor(@{param7});
 </text>
         </org.drools.workbench.models.datamodel.rule.FreeFormLine>
       </definition>
@@ -398,7 +398,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -413,7 +413,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -423,12 +423,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>PREAPROBACION</valueString>
+        <valueString>LISTA_REQUISITOS</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>S</valueString>
+        <valueString>cliente.getRequisitos()</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -470,12 +470,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -485,7 +485,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>N</valueString>
+        <valueString>&quot;S&quot;</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -512,6 +512,16 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -527,22 +537,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>PREAPROBACION</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>LISTA_REQUISITOS</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>S</valueString>
+        <valueString>&quot;N&quot;</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -599,7 +599,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>S</valueString>
+        <valueString>&quot;S&quot;</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -656,7 +656,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>N</valueString>
+        <valueString>&quot;N&quot;</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
