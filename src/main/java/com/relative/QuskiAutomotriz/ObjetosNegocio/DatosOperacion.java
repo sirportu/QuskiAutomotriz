@@ -8,8 +8,8 @@ public class DatosOperacion implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label("QuskiAutomotriz")
-	private java.lang.Double quskiAutomotriz;
+	@org.kie.api.definition.type.Label("ValorFacturable")
+	private java.lang.Double valorFacturable;
 
 	@org.kie.api.definition.type.Label("ValorEntrada")
 	private java.lang.Double valorEntrada;
@@ -23,12 +23,12 @@ public class DatosOperacion implements java.io.Serializable {
 	public DatosOperacion() {
 	}
 	
-	public java.lang.Double getQuskiAutomotriz() {
-		return this.quskiAutomotriz;
+	public java.lang.Double getValorFacturable() {
+		return this.valorFacturable;
 	}
 
-	public void setQuskiAutomotriz(java.lang.Double quskiAutomotriz) {
-		this.quskiAutomotriz = quskiAutomotriz;
+	public void setValorFacturable(java.lang.Double valorFacturable) {
+		this.valorFacturable = valorFacturable;
 	}
 
 	public java.lang.Double getValorEntrada() {
@@ -55,10 +55,10 @@ public class DatosOperacion implements java.io.Serializable {
 		this.valorCuota = valorCuota;
 	}
 
-	public DatosOperacion(java.lang.Double quskiAutomotriz,
+	public DatosOperacion(java.lang.Double valorFacturable,
 			java.lang.Double valorEntrada, java.lang.Double montoFinanciado,
 			java.lang.Double valorCuota) {
-		this.quskiAutomotriz = quskiAutomotriz;
+		this.valorFacturable = valorFacturable;
 		this.valorEntrada = valorEntrada;
 		this.montoFinanciado = montoFinanciado;
 		this.valorCuota = valorCuota;
